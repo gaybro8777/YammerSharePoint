@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1b3d0bb0-3064-43b3-b16b-59217c2deea0" solutionId="1b3d0bb0-3064-43b3-b16b-59217c2deea0" resetWebServer="false" sharePointProductVersion="15.0" name="YammerEmbedWebpart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e572508c-019c-43af-9613-30400acff776" />
+  </features>
+</package>

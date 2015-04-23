@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="YammerEmbedWebpart.Webparts.YammerEmbed.YammerEmbed, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Yammer Embed</property>
+        <property name="Description" type="string">Yammer Embed Configuration Tool</property>
+		<property name="ChromeType" type="chrometype">None</property>
+
+		<property name="WrapperId" type="string"></property>  <!-- i.e. #embedded-feed-->
+		<property name="WrapperWidth">0</property>
+		<property name="WrapperHeight">0</property>
+
+		<property name="FeedType" type="yammerFeedTypes">MyFeed</property>
+		<property name="ShowHeader" type="bool">true</property>
+		<property name="HideNetworkName" type="bool">false</property>
+		<property name="ShowFooter" type="bool">true</property>
+		<property name="ShowOpenGraphPreview" type="bool">false</property>  
+		<property name="DefaultToCanonical" type="bool">false</property>
+
+		<property name="OpenGraphType" type="yammerOpenGraphTypes">Page</property>
+	  </properties>
+	</data>
+  </webPart>
+</webParts>
+
+

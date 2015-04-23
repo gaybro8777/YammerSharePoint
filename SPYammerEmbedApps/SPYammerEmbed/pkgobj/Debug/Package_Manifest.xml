@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="273475f2-091b-40b8-9e10-1f2ca99f71e5" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="SPYammerEmbed_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

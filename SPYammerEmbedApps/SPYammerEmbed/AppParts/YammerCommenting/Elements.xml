@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ClientWebPart Name="YammerCommenting" Title="Yammer Commenting" Description="Yammer Commenting Configuration Tool">
+
+		<Content Type="html" Src="~appWebUrl/Pages/YammerCommenting.aspx?{StandardTokens}&amp;WrapperId=_WrapperId_&amp;WrapperWidth=_WrapperWidth_&amp;WrapperHeight=_WrapperHeight_&amp;NetworkPermalink=_NetworkPermalink_&amp;ShowHeader=_ShowHeader_&amp;HideNetworkName=_HideNetworkName_&amp;PromptText=_PromptText_&amp;ShowFooter=_ShowFooter_&amp;UseSSO=_UseSSO_&amp;OpenGraphType=_OpenGraphType_&amp;OpenGraphUrl=_OpenGraphUrl_&amp;ShowOpenGraphPreview=_ShowOpenGraphPreview_&amp;OpenGraphTitle=_OpenGraphTitle_&amp;OpenGraphImgeUrl=_OpenGraphImageUrl_" />
+
+		<Properties>
+			<!--container settings-->
+			<Property
+        Name="WrapperId"
+        Type="string"
+        RequiresDesignerPermission="false"
+        DefaultValue=""
+        WebBrowsable="true"
+        WebCategory="Yammer Embed Wrapper"
+        WebDisplayName="Unique wrapper container ID selector"
+				WebDescription="An unique selector ID for this instance, i.e. #embedded-commenting. Leave blank for default.">
+			</Property>
+			<Property
+        Name="WrapperWidth"
+        Type="int"
+        RequiresDesignerPermission="false"
+        DefaultValue="0"
+        WebBrowsable="true"
+        WebCategory="Yammer Embed Wrapper"
+        WebDisplayName="Container Width"
+				WebDescription="Width in pixels for container. &quot;0&quot; for default.">
+			</Property>
+			<Property
+				Name="WrapperHeight"
+        Type="int"
+        RequiresDesignerPermission="false"
+        DefaultValue="0"
+        WebBrowsable="true"
+        WebCategory="Yammer Embed Wrapper"
+        WebDisplayName="Container Height"
+				WebDescription="Height in pixels for container. &quot;0&quot; for default.">
+			</Property>
+			<!-- /container settings-->
+
+			<!-- Embed JavaScript Settings -->
+			<Property
+				Name="NetworkPermalink"
+        Type="string"
+        RequiresDesignerPermission="false"
+        DefaultValue="pixelmill.com"
+        WebBrowsable="true"
+        WebCategory="Embed JavaScript Settings"
+        WebDisplayName="Network Permalink (network)"
+				WebDescription="Your Network, i.e. microsoft.com">
+			</Property>
+			<Property
+				Name="ShowHeader"
+        Type="boolean"
+        RequiresDesignerPermission="false"
+        DefaultValue="true"
+        WebBrowsable="true"
+        WebCategory="Embed JavaScript Settings"
+        WebDisplayName="Show Header? (config.header)"
+				WebDescription="Display Header in Feed?">
+			</Property>
+			<Property
+				Name="HideNetworkName"
+        Type="boolean"
+        RequiresDesignerPermission="false"
+        DefaultValue="false"
+        WebBrowsable="true"
+        WebCategory="Embed JavaScript Settings"
+        WebDisplayName="Hide Network Name Header? (config.hideNetworkName)"
+				WebDescription="Hide Network Name?">
+			</Property>
+			<Property
+				Name="PromptText"
+        Type="string"
+        RequiresDesignerPermission="false"
+        DefaultValue=""
+        WebBrowsable="true"
+        WebCategory="Embed JavaScript Settings"
+        WebDisplayName="Prompt Text (config.promptText)"
+				WebDescription="Comment prompt text, leave blank for default">
+			</Property>
+			<Property
+				Name="ShowFooter"
+        Type="boolean"
+        RequiresDesignerPermission="false"
+        DefaultValue="true"
+        WebBrowsable="true"
+        WebCategory="Embed JavaScript Settings"
+        WebDisplayName="Show Footer? (config.footer)"
+				WebDescription="Display Footer in Feed?">
+			</Property>
+			<Property
+				Name="UseSSO"
+        Type="boolean"
+        RequiresDesignerPermission="false"
+        DefaultValue="false"
+        WebBrowsable="true"
+        WebCategory="Embed JavaScript Settings"
+        WebDisplayName="Use Single Sign On (SSO)? (config.use_sso)"
+				WebDescription="Use Single Sign On?">
+			</Property>
+			<!-- /Embed JavaScript Settings -->
+
+			<!-- Open Graph Object Properties -->
+			<Property
+				Name="OpenGraphType"
+        Type="enum"
+        RequiresDesignerPermission="false"
+        DefaultValue="page"
+        WebBrowsable="true"
+        WebCategory="Open Graph Settings"
+        WebDisplayName="Open Graph Type (objectProperties.type)"
+				WebDescription="Type of Open Graph Object to retrieve">
+				<EnumItems>
+					<EnumItem WebDisplayName="Page" Value="page"/>
+					<EnumItem WebDisplayName="Place" Value="place"/>
+					<EnumItem WebDisplayName="Person" Value="person"/>
+					<EnumItem WebDisplayName="Department" Value="department"/>
+					<EnumItem WebDisplayName="Team" Value="team"/>
+					<EnumItem WebDisplayName="Project" Value="project"/>
+					<EnumItem WebDisplayName="Folder" Value="folder"/>
+					<EnumItem WebDisplayName="File" Value="file"/>
+					<EnumItem WebDisplayName="Document" Value="document"/>
+					<EnumItem WebDisplayName="Image" Value="image"/>
+					<EnumItem WebDisplayName="Audio" Value="audio"/>
+					<EnumItem WebDisplayName="Video" Value="video"/>
+					<EnumItem WebDisplayName="Company" Value="company"/>
+				</EnumItems>
+			</Property>
+			<Property
+				Name="OpenGraphUrl"
+        Type="string"
+        RequiresDesignerPermission="false"
+        DefaultValue=""
+        WebBrowsable="true"
+        WebCategory="Open Graph Settings"
+        WebDisplayName="Open Graph Url (objectProperties.url)"
+				WebDescription="Url of Open Graph Object">
+			</Property>
+			<Property
+				Name="ShowOpenGraphPreview"
+        Type="boolean"
+        RequiresDesignerPermission="false"
+        DefaultValue="false"
+        WebBrowsable="true"
+        WebCategory="Open Graph Settings"
+        WebDisplayName="Show Open Graph Preview? (config.showOpenGraphPreview)"
+				WebDescription="Show the preview for an Open Graph Object if available?">
+			</Property>
+			<Property
+				Name="OpenGraphTitle"
+        Type="string"
+        RequiresDesignerPermission="false"
+        DefaultValue=""
+        WebBrowsable="true"
+        WebCategory="Open Graph Settings"
+        WebDisplayName="Open Graph Title (objectProperties.title)"
+				WebDescription="Title of Open Graph Object">
+			</Property>
+			<Property
+				Name="OpenGraphImageUrl"
+        Type="string"
+        RequiresDesignerPermission="false"
+        DefaultValue=""
+        WebBrowsable="true"
+        WebCategory="Open Graph Settings"
+        WebDisplayName="Open Graph Image Url (objectProperties.image)"
+				WebDescription="Image Url of Open Graph Object preview">
+			</Property>
+			
+			<!-- /Open Graph Object Properties -->
+		</Properties>
+	</ClientWebPart>
+</Elements>

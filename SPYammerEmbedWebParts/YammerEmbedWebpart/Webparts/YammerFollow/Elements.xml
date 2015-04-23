@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="YammerFollow" List="113" Url="_catalogs/wp">
+    <File Path="YammerFollow\YammerFollow.webpart" Url="YammerEmbedWebpart_YammerFollow.webpart" Type="GhostableInLibrary">
+		<Property Name="Group" Value="Yammer Components" />
+    </File>
+  </Module>
+</Elements>

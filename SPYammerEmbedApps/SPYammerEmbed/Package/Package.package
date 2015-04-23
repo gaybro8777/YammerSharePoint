@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="273475f2-091b-40b8-9e10-1f2ca99f71e5" 
+        solutionId="273475f2-091b-40b8-9e10-1f2ca99f71e5" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SPYammerEmbed"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="cdd24bd4-b052-45cf-96fa-4e3694373e65" />
+  </features>
+</package>

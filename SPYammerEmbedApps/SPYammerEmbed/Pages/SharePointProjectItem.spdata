@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Pages\" Type="ElementManifest" />
+    <ProjectItemFile Source="default.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="YammerEmbed.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="YammerLike.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="YammerFollow.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="YammerShare.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="YammerCommenting.aspx" Target="Pages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

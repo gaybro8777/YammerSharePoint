@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ClientWebPart Name="YammerEmbed" Title="Yammer Embed" Description="Yammer Embed Configuration Tool">
+    
+    <Content Type="html" Src="~appWebUrl/Pages/ClientWebPart.aspx?{StandardTokens}&amp;Network=_Network&amp;FeedID=_FeedID_&amp;FeedType=_FeedType_" />
+
+    <Properties>
+      <Property
+        Name="Network"
+        Type="string"
+        RequiresDesignerPermission="false"
+        DefaultValue="pixelmill.com"
+        WebBrowsable="true"
+        WebCategory="Yammer"
+        WebDisplayName="Network">
+      </Property>
+      <Property
+        Name="FeedType"
+        Type="string"
+        RequiresDesignerPermission="false"
+        DefaultValue="group"
+        WebBrowsable="true"
+        WebCategory="Yammer"
+        WebDisplayName="FeedType">
+      </Property>
+      <Property
+        Name="FeedID"
+        Type="string"
+        RequiresDesignerPermission="false"
+        DefaultValue="4797953"
+        WebBrowsable="true"
+        WebCategory="Yammer"
+        WebDisplayName="FeedID">
+      </Property>
+    </Properties>
+  </ClientWebPart>
+</Elements>

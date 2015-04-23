@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6A5FE53-327B-4D38-A51D-210B68C0C457}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YammerEmbedWebpart</RootNamespace>
+    <AssemblyName>YammerEmbedWebpart</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Webparts\YammerCommenting\YammerCommenting.cs" />
+    <Compile Include="Webparts\YammerEmbed\YammerEmbed.cs" />
+    <Compile Include="Webparts\YammerFollow\YammerFollow.cs" />
+    <Compile Include="Webparts\YammerLike\YammerLike.cs" />
+    <Compile Include="Webparts\YammerShare\YammerShare.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\YammerComponents\YammerComponents.feature">
+      <FeatureId>{e572508c-019c-43af-9613-30400acff776}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{1b3d0bb0-3064-43b3-b16b-59217c2deea0}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Webparts\YammerCommenting\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d0b34938-1a70-47f1-933c-1eb92312a59a}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\YammerCommenting\YammerCommenting.webpart" />
+    <None Include="Webparts\YammerEmbed\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e56af159-0a6c-404d-9f34-faeb487ef3d2}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\YammerEmbed\YammerEmbed.webpart" />
+    <None Include="Webparts\YammerFollow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3b8a6c7a-5d49-4047-9746-36660f359cfe}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\YammerFollow\YammerFollow.webpart" />
+    <None Include="Webparts\YammerLike\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f918bd26-5369-428e-9cff-6b952930997c}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\YammerLike\YammerLike.webpart" />
+    <None Include="Webparts\YammerShare\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{feb56a42-2805-4a31-993f-354c712fe229}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\YammerShare\YammerShare.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\YammerComponents\YammerComponents.Template.xml">
+      <DependentUpon>YammerComponents.feature</DependentUpon>
+    </Content>
+    <Content Include="Webparts\YammerCommenting\Elements.xml" />
+    <Content Include="Webparts\YammerEmbed\Elements.xml" />
+    <Content Include="Webparts\YammerFollow\Elements.xml" />
+    <Content Include="Webparts\YammerLike\Elements.xml" />
+    <Content Include="Webparts\YammerShare\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

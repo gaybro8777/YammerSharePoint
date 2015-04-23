@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ClientWebPart Name="YammerShare" Title="Yammer Share" Description="Yammer Share Configuration Tool">
+
+		<Content Type="html" Src="~appWebUrl/Pages/YammerShare.aspx?{StandardTokens}" />
+
+		<Properties>
+			<!-- Embed JavaScript Settings -->
+		</Properties>
+	</ClientWebPart>
+</Elements>

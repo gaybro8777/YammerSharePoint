@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="YammerEmbedWebpart.Webparts.YammerLike.YammerLike, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+		  <property name="Title" type="string">Yammer Like</property>
+		  <property name="Description" type="string">Yammer Like Configuration Tool</property>
+		  <property name="ChromeType" type="chrometype">None</property>
+
+		  <property name="WrapperId" type="string"></property> <!-- i.e. #embedded-like-->
+      </properties>
+    </data>
+  </webPart>
+</webParts>

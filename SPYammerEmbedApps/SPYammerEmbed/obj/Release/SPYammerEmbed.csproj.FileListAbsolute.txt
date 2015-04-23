@@ -1,0 +1,3 @@
+E:\Datastore\Git Projects\GitHub\SPYammer\SPYammerEmbed\SPYammerEmbed\bin\Release\SPYammerEmbed.pdb
+E:\Datastore\Git Projects\GitHub\SPYammer\SPYammerEmbed\SPYammerEmbed\obj\Release\SPYammerEmbed.dll
+E:\Datastore\Git Projects\GitHub\SPYammer\SPYammerEmbed\SPYammerEmbed\obj\Release\SPYammerEmbed.pdb
