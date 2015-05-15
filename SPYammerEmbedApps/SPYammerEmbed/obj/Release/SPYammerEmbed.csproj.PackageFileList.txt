@@ -1,1 +1,0 @@
-bin\Release\SPYammerEmbed.wsp

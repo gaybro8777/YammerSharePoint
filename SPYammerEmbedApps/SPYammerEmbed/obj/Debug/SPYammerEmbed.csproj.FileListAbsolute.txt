@@ -1,3 +1,0 @@
-E:\Datastore\Git Projects\GitHub\SPYammer\SPYammerEmbed\SPYammerEmbed\bin\Debug\SPYammerEmbed.pdb
-E:\Datastore\Git Projects\GitHub\SPYammer\SPYammerEmbed\SPYammerEmbed\obj\Debug\SPYammerEmbed.dll
-E:\Datastore\Git Projects\GitHub\SPYammer\SPYammerEmbed\SPYammerEmbed\obj\Debug\SPYammerEmbed.pdb

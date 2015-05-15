@@ -74,7 +74,7 @@ Pxlml.yammerEmbed = (function () {
 		//verify variables
 		gWrapperId = (!gWrapperId || gWrapperId.length < 1) ? '#embedded-feed' : gWrapperId;
 		gWrapperWidth = (!gWrapperWidth || gWrapperWidth < 0) ? 0 : gWrapperWidth; //default width to 0, 0 will be converted to 100% later
-		gWrapperHeight = (!gWrapperHeight || gWrapperHeight < 1) ? 400 : gWrapperHeight; //a height is required to ensure visibility
+		gWrapperHeight = (!gWrapperHeight || gWrapperHeight < 0) ? 0 : gWrapperHeight; //default height to 0, 0 will be converted to 100% later. Will require additional support on client side to set height of containing iframe
 
 		gFeedType = (!gFeedType || gFeedType === 'myfeed') ? '' : gFeedType; //default to '', myfeed is also ''
 
@@ -82,7 +82,7 @@ Pxlml.yammerEmbed = (function () {
 		var wrapperId = GetWrapperId();
 
 		//create the embed container first
-		var container = '<div id="' + wrapperId + '" style="height: ' + gWrapperHeight + 'px; width: ' + ((gWrapperWidth > 0) ? gWrapperWidth + 'px' : '100%') + ';"></div>';
+		var container = '<div id="' + wrapperId + '" style="height: ' + ((gWrapperHeight > 0) ? gWrapperHeight + 'px' : '100%') + '; width: ' + ((gWrapperWidth > 0) ? gWrapperWidth + 'px' : '100%') + ';"></div>';
 
 		//print the container to the page
 		document.write(container);
@@ -101,7 +101,7 @@ Pxlml.yammerEmbed = (function () {
 		//yammer embed config settings
 		options.config = {};
 
-		options.config.uss_sso = gUseSSO;							//use Single sign on
+		options.config.use_sso = gUseSSO;							//use Single sign on
 		options.config.header = gShowHeader;						//show the Yammer / network header
 		options.config.footer = gShowFooter;						//show the yammer footer
 		options.config.defaultToCanonical = gDefaultToCanonical;	//should posted message be sent to default network or the network provided. Suggested true
@@ -273,13 +273,13 @@ Pxlml.yammerEmbed = (function () {
 		//verify variables
 		gWrapperId = (!gWrapperId || gWrapperId.length < 1) ? '#embedded-comment' : gWrapperId;
 		gWrapperWidth = (!gWrapperWidth || gWrapperWidth < 0) ? 0 : gWrapperWidth; //default width to 0, 0 will be converted to 100% later
-		gWrapperHeight = (!gWrapperHeight || gWrapperHeight < 1) ? 400 : gWrapperHeight; //a height is required to ensure visibility
+		gWrapperHeight = (!gWrapperHeight || gWrapperHeight < 0) ? 0 : gWrapperHeight; //default height to 0, 0 will be converted to 100% later. Will require additional support on client side to set height of containing iframe
 
 		//get the actual wrapper id we will use for the container. want to remove # to normalize
 		var wrapperId = GetWrapperId();
 
 		//create the embed container first
-		var container = '<div id="' + wrapperId + '" style="height: ' + gWrapperHeight + 'px; width: ' + ((gWrapperWidth > 0) ? gWrapperWidth + 'px' : '100%') + ';"></div>';
+		var container = '<div id="' + wrapperId + '" style="height: ' + ((gWrapperHeight > 0) ? gWrapperHeight + 'px' : '100%') + '; width: ' + ((gWrapperWidth > 0) ? gWrapperWidth + 'px' : '100%') + ';"></div>';
 
 		//print the container to the page
 		document.write(container);
@@ -295,7 +295,7 @@ Pxlml.yammerEmbed = (function () {
 		//yammer embed config settings
 		options.config = {};
 
-		options.config.uss_sso = gUseSSO;							//use Single sign on
+		options.config.use_sso = gUseSSO;							//use Single sign on
 		options.config.header = gShowHeader;						//show the Yammer / network header
 		options.config.footer = gShowFooter;						//show the yammer footer
 		options.config.hideNetworkName = gHideNetworkName;			//hide the network name in header?
